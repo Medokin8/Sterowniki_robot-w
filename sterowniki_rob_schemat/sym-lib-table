@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bib)(type Legacy)(uri ${KIPRJMOD}/bib.lib)(options "")(descr ""))
+  (lib (name sterowniki_rob_schemat-rescue)(type Legacy)(uri ${KIPRJMOD}/sterowniki_rob_schemat-rescue.lib)(options "")(descr ""))
+)

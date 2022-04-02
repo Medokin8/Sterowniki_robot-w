@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Buzzer BZ1
+U 1 1 62456090
+P 6750 4550
+F 0 "BZ1" H 6902 4579 50  0000 L CNN
+F 1 "Buzzer" H 6902 4488 50  0000 L CNN
+F 2 "" V 6725 4650 50  0001 C CNN
+F 3 "~" V 6725 4650 50  0001 C CNN
+	1    6750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L bib:HC-SR04 S1
+U 1 1 6245762E
+P 2600 6550
+F 0 "S1" H 3228 6588 50  0000 L CNN
+F 1 "HC-SR04" H 3228 6497 50  0000 L CNN
+F 2 "" H 2300 6650 50  0001 C CNN
+F 3 "" H 2300 6650 50  0001 C CNN
+	1    2600 6550
+	0    -1   1    0   
+$EndComp
+$Comp
+L Sensor_Motion:LSM303D U2
+U 1 1 6245860E
+P 7450 2550
+F 0 "U2" H 7450 3431 50  0000 C CNN
+F 1 "LSM303D" H 7450 3340 50  0000 C CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm" H 7700 1950 50  0001 L CNN
+F 3 "http://www.st.com/web/en/resource/technical/document/datasheet/DM00057547.pdf" H 7600 3300 50  0001 C CNN
+	1    7450 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32L4:STM32L476VGTx U1
+U 1 1 62459D99
+P 4750 4850
+F 0 "U1" H 4750 1961 50  0000 C CNN
+F 1 "STM32L476VGTx" H 4750 1870 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4050 2250 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108832.pdf" H 4750 4850 50  0001 C CNN
+	1    4750 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6247C4DD
+P 6650 4200
+F 0 "R?" V 6443 4200 50  0000 C CNN
+F 1 "1K" V 6534 4200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal" V 6580 4200 50  0001 C CNN
+F 3 "~" H 6650 4200 50  0001 C CNN
+	1    6650 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 6247EAF4
+P 6550 4950
+F 0 "Q1" H 6741 4996 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 6741 4905 50  0000 L CNN
+F 2 "" H 6750 5050 50  0001 C CNN
+F 3 "~" H 6550 4950 50  0001 C CNN
+	1    6550 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4350 6650 4450
+Wire Wire Line
+	6650 4650 6650 4750
+Wire Wire Line
+	2850 6900 3000 6900
+Wire Wire Line
+	3000 6900 3000 7300
+Wire Wire Line
+	3000 6100 3000 6450
+Wire Wire Line
+	3000 6450 2850 6450
+$Comp
+L bib:HC-SR04 S2
+U 1 1 624A82A5
+P 2600 5000
+F 0 "S2" H 3228 5038 50  0000 L CNN
+F 1 "HC-SR04" H 3228 4947 50  0000 L CNN
+F 2 "" H 2300 5100 50  0001 C CNN
+F 3 "" H 2300 5100 50  0001 C CNN
+	1    2600 5000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2850 5350 3000 5350
+Wire Wire Line
+	3000 5350 3000 5750
+Wire Wire Line
+	3000 4550 3000 4900
+Wire Wire Line
+	3000 4900 2850 4900
+$Comp
+L bib:HC-SR04 S3
+U 1 1 624AA316
+P 2600 3400
+F 0 "S3" H 3228 3438 50  0000 L CNN
+F 1 "HC-SR04" H 3228 3347 50  0000 L CNN
+F 2 "" H 2300 3500 50  0001 C CNN
+F 3 "" H 2300 3500 50  0001 C CNN
+	1    2600 3400
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2850 3750 3000 3750
+Wire Wire Line
+	3000 3750 3000 4150
+Wire Wire Line
+	3000 2950 3000 3300
+Wire Wire Line
+	3000 3300 2850 3300
+$Comp
+L bib:HC-SR04 S4
+U 1 1 624ABFCB
+P 2600 1800
+F 0 "S4" H 3228 1838 50  0000 L CNN
+F 1 "HC-SR04" H 3228 1747 50  0000 L CNN
+F 2 "" H 2300 1900 50  0001 C CNN
+F 3 "" H 2300 1900 50  0001 C CNN
+	1    2600 1800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2850 2150 3000 2150
+Wire Wire Line
+	3000 2150 3000 2550
+Wire Wire Line
+	3000 1350 3000 1700
+Wire Wire Line
+	3000 1700 2850 1700
+$Comp
+L power:+5V #PWR?
+U 1 1 624B5C71
+P 1750 1250
+F 0 "#PWR?" H 1750 1100 50  0001 C CNN
+F 1 "+5V" H 1765 1423 50  0000 C CNN
+F 2 "" H 1750 1250 50  0001 C CNN
+F 3 "" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1350 1750 1250
+Connection ~ 1750 1350
+Wire Wire Line
+	5650 4950 6350 4950
+Wire Wire Line
+	2850 6750 3500 6750
+Wire Wire Line
+	3500 6750 3500 7250
+Wire Wire Line
+	3500 7250 3850 7250
+Wire Wire Line
+	1750 4550 1750 6100
+Connection ~ 1750 4550
+Connection ~ 1750 2950
+Wire Wire Line
+	1750 2950 1750 4550
+Wire Wire Line
+	1750 1350 1750 2950
+Connection ~ 1800 7300
+Wire Wire Line
+	1800 5750 1800 7300
+Connection ~ 1800 5750
+Wire Wire Line
+	1800 4150 1800 5750
+Wire Wire Line
+	1800 4150 1800 2550
+Connection ~ 1800 4150
+Wire Wire Line
+	3850 7150 3550 7150
+Wire Wire Line
+	3550 7150 3550 5200
+Wire Wire Line
+	3550 5200 2850 5200
+Wire Wire Line
+	2850 3600 3600 3600
+Wire Wire Line
+	3600 3600 3600 7050
+Wire Wire Line
+	3600 7050 3850 7050
+Wire Wire Line
+	2850 2000 3650 2000
+Wire Wire Line
+	3650 2000 3650 6650
+Wire Wire Line
+	3650 6650 3850 6650
+Wire Wire Line
+	2850 3450 3250 3450
+Wire Wire Line
+	3250 3450 3250 4250
+Wire Wire Line
+	3250 4250 3850 4250
+Wire Wire Line
+	3850 4150 3300 4150
+Wire Wire Line
+	3300 4150 3300 1850
+Wire Wire Line
+	3300 1850 2850 1850
+Wire Wire Line
+	3850 4450 3250 4450
+Wire Wire Line
+	3250 4450 3250 5050
+Wire Wire Line
+	3250 5050 2850 5050
+Wire Wire Line
+	3300 4550 3300 6600
+Wire Wire Line
+	3300 6600 2850 6600
+Wire Wire Line
+	3300 4550 3850 4550
+$Comp
+L pspice:0 #GND?
+U 1 1 624B547D
+P 1800 7500
+F 0 "#GND?" H 1800 7400 50  0001 C CNN
+F 1 "0" H 1800 7589 50  0000 C CNN
+F 2 "" H 1800 7500 50  0001 C CNN
+F 3 "~" H 1800 7500 50  0001 C CNN
+	1    1800 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5150 6650 5300
+$Comp
+L pspice:0 #GND?
+U 1 1 6248567F
+P 6650 5300
+F 0 "#GND?" H 6650 5200 50  0001 C CNN
+F 1 "0" H 6700 5350 50  0000 C CNN
+F 2 "" H 6650 5300 50  0001 C CNN
+F 3 "~" H 6650 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4050 6650 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 62484485
+P 6650 3850
+F 0 "#PWR?" H 6650 3700 50  0001 C CNN
+F 1 "+5V" H 6665 4023 50  0000 C CNN
+F 2 "" H 6650 3850 50  0001 C CNN
+F 3 "" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7300 1800 7500
+Wire Wire Line
+	1800 4150 3000 4150
+Wire Wire Line
+	1750 2950 3000 2950
+Wire Wire Line
+	1800 2550 3000 2550
+Wire Wire Line
+	1750 1350 3000 1350
+Wire Wire Line
+	1800 5750 3000 5750
+Wire Wire Line
+	1750 4550 3000 4550
+Wire Wire Line
+	1800 7300 3000 7300
+Wire Wire Line
+	1750 6100 3000 6100
+$Comp
+L Device:C 100n
+U 1 1 6249EA67
+P 1300 4350
+F 0 "100n" H 1415 4396 50  0000 L CNN
+F 1 "C1" H 1415 4305 50  0000 L CNN
+F 2 "" H 1338 4200 50  0001 C CNN
+F 3 "~" H 1300 4350 50  0001 C CNN
+	1    1300 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4500 1300 7500
+Wire Wire Line
+	1300 1250 1300 4200
+$Comp
+L pspice:0 #GND?
+U 1 1 624A30F7
+P 1300 7500
+F 0 "#GND?" H 1300 7400 50  0001 C CNN
+F 1 "0" H 1300 7589 50  0000 C CNN
+F 2 "" H 1300 7500 50  0001 C CNN
+F 3 "~" H 1300 7500 50  0001 C CNN
+	1    1300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 624A43E4
+P 1300 1250
+F 0 "#PWR?" H 1300 1100 50  0001 C CNN
+F 1 "+5V" H 1315 1423 50  0000 C CNN
+F 2 "" H 1300 1250 50  0001 C CNN
+F 3 "" H 1300 1250 50  0001 C CNN
+	1    1300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND?
+U 1 1 624A7D1F
+P 7250 3500
+F 0 "#GND?" H 7250 3400 50  0001 C CNN
+F 1 "0" H 7250 3589 50  0000 C CNN
+F 2 "" H 7250 3500 50  0001 C CNN
+F 3 "~" H 7250 3500 50  0001 C CNN
+	1    7250 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2450 6750 2450
+Wire Wire Line
+	7250 3250 7250 3500
+Wire Wire Line
+	6750 2450 6750 3500
+$Comp
+L pspice:0 #GND?
+U 1 1 624A731D
+P 6750 3500
+F 0 "#GND?" H 6750 3400 50  0001 C CNN
+F 1 "0" H 6750 3589 50  0000 C CNN
+F 2 "" H 6750 3500 50  0001 C CNN
+F 3 "~" H 6750 3500 50  0001 C CNN
+	1    6750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 624BC260
+P 7350 1250
+F 0 "#PWR?" H 7350 1100 50  0001 C CNN
+F 1 "+3.3V" H 7365 1423 50  0000 C CNN
+F 2 "" H 7350 1250 50  0001 C CNN
+F 3 "" H 7350 1250 50  0001 C CNN
+	1    7350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3350 6300 3350
+Wire Wire Line
+	6300 3350 6300 2350
+Wire Wire Line
+	6300 2350 6950 2350
+Wire Wire Line
+	7350 1250 7350 1850
+$EndSCHEMATC
