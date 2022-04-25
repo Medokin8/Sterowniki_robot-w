@@ -140,8 +140,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 Wire Wire Line
 	2850 6300 3200 6300
-Text GLabel 4450 7350 3    50   Input ~ 0
-3V3
 Text GLabel 4650 7400 3    50   Input ~ 0
 5V
 Text GLabel 1800 800  1    50   Input ~ 0
@@ -150,8 +148,6 @@ Text GLabel 1300 800  1    50   Input ~ 0
 5V
 Wire Wire Line
 	4650 7100 4650 7400
-Wire Wire Line
-	4450 7100 4450 7350
 $Comp
 L pspice:0 #GND?
 U 1 1 625A9E28

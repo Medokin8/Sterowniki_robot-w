@@ -144,7 +144,7 @@ Text GLabel 4450 7350 3    50   Input ~ 0
 3V3
 Text GLabel 4650 7400 3    50   Input ~ 0
 5V
-Text GLabel 1750 800  1    50   Input ~ 0
+Text GLabel 1800 800  1    50   Input ~ 0
 5V
 Text GLabel 1300 800  1    50   Input ~ 0
 5V
