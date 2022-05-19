@@ -158,8 +158,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 6100 5550 6100
 Wire Wire Line
-	2350 6150 3000 6150
-Wire Wire Line
 	7350 2900 7800 2900
 $Comp
 L bib:HC-SR04 S2
@@ -233,8 +231,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 4800 3000 4800
 Wire Wire Line
-	2350 4650 3000 4650
-Wire Wire Line
 	3000 3100 2350 3100
 Wire Wire Line
 	3000 1600 2350 1600
@@ -249,12 +245,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cd74hc4051.pdf" H 3800 2200 50  0001 C CNN
 	1    3800 2600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3000 1750 2350 1750
-Wire Wire Line
-	3000 3250 2350 3250
-Wire Wire Line
-	2350 6300 3000 6300
 $Comp
 L 74xx:74HC4051 U?
 U 1 1 628A57BB
@@ -328,4 +318,74 @@ Text GLabel 7550 4800 2    50   Input ~ 0
 PH1
 Text GLabel 4700 3850 2    50   Input ~ 0
 PH1
+$Comp
+L power:GND #PWR?
+U 1 1 628E4B62
+P 4200 4400
+F 0 "#PWR?" H 4200 4150 50  0001 C CNN
+F 1 "GND" H 4205 4227 50  0000 C CNN
+F 2 "" H 4200 4400 50  0001 C CNN
+F 3 "" H 4200 4400 50  0001 C CNN
+	1    4200 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 628E6171
+P 4250 2050
+F 0 "#PWR?" H 4250 1800 50  0001 C CNN
+F 1 "GND" H 4255 1877 50  0000 C CNN
+F 2 "" H 4250 2050 50  0001 C CNN
+F 3 "" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2050 4250 1900
+Wire Wire Line
+	4250 1900 3800 1900
+Wire Wire Line
+	3800 1900 3800 2000
+Wire Wire Line
+	2350 6300 3000 6300
+Wire Wire Line
+	3400 5200 3000 5200
+Wire Wire Line
+	3000 5200 3000 4800
+Wire Wire Line
+	3400 5300 3000 5300
+Wire Wire Line
+	3000 5300 3000 6300
+Wire Wire Line
+	3050 3250 3050 5100
+Wire Wire Line
+	3050 5100 3400 5100
+Wire Wire Line
+	2350 3250 3050 3250
+Wire Wire Line
+	3400 5000 3100 5000
+Wire Wire Line
+	3100 5000 3100 1750
+Wire Wire Line
+	2350 1750 3100 1750
+Wire Wire Line
+	3000 1600 3000 2600
+Wire Wire Line
+	3000 2600 3400 2600
+Wire Wire Line
+	3000 3100 3000 2700
+Wire Wire Line
+	3000 2700 3400 2700
+Wire Wire Line
+	3200 4650 3200 2800
+Wire Wire Line
+	3200 2800 3400 2800
+Wire Wire Line
+	2350 4650 3200 4650
+Wire Wire Line
+	3400 2900 3250 2900
+Wire Wire Line
+	3250 2900 3250 6150
+Wire Wire Line
+	2350 6150 3250 6150
 $EndSCHEMATC
