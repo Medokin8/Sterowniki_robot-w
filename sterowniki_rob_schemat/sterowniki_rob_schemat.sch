@@ -234,13 +234,11 @@ $EndComp
 Wire Wire Line
 	4100 5000 4500 5000
 Wire Wire Line
-	4500 5000 4500 2600
+	4500 5000 4500 3850
 Wire Wire Line
 	4500 2600 4100 2600
 Wire Wire Line
 	4100 2700 4400 2700
-Wire Wire Line
-	4400 2700 4400 3700
 Wire Wire Line
 	4400 5100 4100 5100
 Wire Wire Line
@@ -275,16 +273,6 @@ Wire Wire Line
 Connection ~ 2500 3450
 Wire Wire Line
 	2500 3450 2500 4500
-Wire Wire Line
-	4700 3850 4400 3850
-Connection ~ 4400 3850
-Wire Wire Line
-	4400 3850 4400 5100
-Wire Wire Line
-	4700 3700 4400 3700
-Connection ~ 4400 3700
-Wire Wire Line
-	4400 3700 4400 3850
 Text GLabel 4700 3700 2    50   Input ~ 0
 PH0
 Text GLabel 7550 4900 2    50   Input ~ 0
@@ -355,4 +343,16 @@ Wire Wire Line
 	2350 6150 3250 6150
 Wire Wire Line
 	2500 800  2500 2950
+Wire Wire Line
+	4400 2700 4400 3700
+Connection ~ 4400 3700
+Wire Wire Line
+	4700 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 5100
+Wire Wire Line
+	4700 3850 4500 3850
+Connection ~ 4500 3850
+Wire Wire Line
+	4500 3850 4500 2600
 $EndSCHEMATC

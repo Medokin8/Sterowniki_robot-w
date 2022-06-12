@@ -181,25 +181,10 @@ F 3 "" H 1800 3150 50  0001 C CNN
 	1    2100 3050
 	0    -1   1    0   
 $EndComp
-$Comp
-L bib:HC-SR04 S4
-U 1 1 6285209D
-P 2100 1550
-F 0 "S4" H 2728 1588 50  0000 L CNN
-F 1 "HC-SR04" H 2728 1497 50  0000 L CNN
-F 2 "" H 1800 1650 50  0001 C CNN
-F 3 "" H 1800 1650 50  0001 C CNN
-	1    2100 1550
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	2700 6450 2700 7050
 Wire Wire Line
 	2350 6450 2700 6450
-Wire Wire Line
-	2350 1900 2700 1900
-Wire Wire Line
-	2700 1900 2700 3400
 Connection ~ 2700 6450
 Wire Wire Line
 	2350 4950 2700 4950
@@ -208,11 +193,8 @@ Wire Wire Line
 	2700 4950 2700 6450
 Wire Wire Line
 	2350 3400 2700 3400
-Connection ~ 2700 3400
 Wire Wire Line
 	2700 3400 2700 4950
-Wire Wire Line
-	2500 800  2500 1450
 Wire Wire Line
 	2500 4500 2350 4500
 Connection ~ 2500 4500
@@ -224,16 +206,9 @@ Connection ~ 2500 2950
 Wire Wire Line
 	2500 2950 2500 3450
 Wire Wire Line
-	2500 1450 2350 1450
-Connection ~ 2500 1450
-Wire Wire Line
-	2500 1450 2500 2950
-Wire Wire Line
 	2350 4800 3000 4800
 Wire Wire Line
 	3000 3100 2350 3100
-Wire Wire Line
-	3000 1600 2350 1600
 $Comp
 L 74xx:74HC4051 U2
 U 1 1 628A8AFC
@@ -363,16 +338,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 3250 3050 3250
 Wire Wire Line
-	3400 5000 3100 5000
-Wire Wire Line
-	3100 5000 3100 1750
-Wire Wire Line
-	2350 1750 3100 1750
-Wire Wire Line
-	3000 1600 3000 2600
-Wire Wire Line
-	3000 2600 3400 2600
-Wire Wire Line
 	3000 3100 3000 2700
 Wire Wire Line
 	3000 2700 3400 2700
@@ -388,4 +353,6 @@ Wire Wire Line
 	3250 2900 3250 6150
 Wire Wire Line
 	2350 6150 3250 6150
+Wire Wire Line
+	2500 800  2500 2950
 $EndSCHEMATC
